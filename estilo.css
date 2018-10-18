@@ -1,17 +1,29 @@
+/* Show it is fixed to the top */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+
+
+    
+}
+
+
 :root {
   --jumbotron-padding-y: 3rem;
 }
 
 .jumbotron {
-  padding-top: var(--jumbotron-padding-y);
-  padding-bottom: var(--jumbotron-padding-y);
-  margin-bottom: 0;
-  background-color: #fff;
+   background-image: url(img/fondo.jpg) ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
 }
 @media (min-width: 768px) {
   .jumbotron {
     padding-top: calc(var(--jumbotron-padding-y) * 2);
     padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+    
   }
 }
 
@@ -20,7 +32,7 @@
 }
 
 .jumbotron-heading {
-  font-weight: 300;
+  font-weight: 900;
 }
 
 .jumbotron .container {
@@ -35,3 +47,9 @@ footer {
 footer p {
   margin-bottom: .25rem;
 }
+
+.card img{
+    filter:grayscale(1);
+        transition:all ease 2s;
+}
+.card:hover img{filter: grayscale(0)}
