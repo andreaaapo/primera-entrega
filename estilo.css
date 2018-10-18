@@ -10,10 +10,11 @@ body {
 
 :root {
   --jumbotron-padding-y: 3rem;
+    background-color: lightblue
 }
 
 .jumbotron {
-   background-image: url(img/fondo.jpg) ;
+   background-image: url(img/fondito.jpg) ;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -23,29 +24,42 @@ body {
   .jumbotron {
     padding-top: calc(var(--jumbotron-padding-y) * 2);
     padding-bottom: calc(var(--jumbotron-padding-y) * 2);
-    
+      
   }
 }
 
 .jumbotron p:last-child {
   margin-bottom: 0;
+   
+    
 }
 
 .jumbotron-heading {
   font-weight: 900;
+    
+    
 }
 
 .jumbotron .container {
-  max-width: 40rem;
+  max-width: 48rem;
+     padding-top: 3rem;
+  padding-bottom: 3rem;
+    background-color: floralwhite;
+        
+    
 }
 
 footer {
   padding-top: 3rem;
   padding-bottom: 3rem;
+    background-color: lightblue;
+    
+    
 }
 
 footer p {
   margin-bottom: .25rem;
+    
 }
 
 .card img{
@@ -53,3 +67,7 @@ footer p {
         transition:all ease 2s;
 }
 .card:hover img{filter: grayscale(0)}
+
+.jumbotron .container{
+    background: rgba(255,245,245,.8); 
+}
